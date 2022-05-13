@@ -2,6 +2,35 @@
   text-align: center;
 }
 
+#sqr{
+  height: 150px;
+  width: 150px;
+  }
+
+.container1{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+ 
+
+/* body{
+   background-image: url('./images/dogimg.jpg');
+   height: 100%; 
+
+    
+  background-size: cover;
+} */
+
+ /* #bgrd{
+  height:'100vh';
+        margin-Top:'-70px';
+        font-size:'50px';
+        background-Size: 'cover';
+        background-repeat: 'no-repeat';
+ } */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +64,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color: rgb(219, 231, 231);
+  text-align: center;
+}
+
+h3{
+ text-align: center;
+ margin-top: 30px;
+}
+.player{
+  font-size: 25px;
+}
+
+.board{
+  background-color: aqua;
+  height:350px;
+  width:350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin:5rem auto; 
+  user-select: none;
+  cursor:pointer;
+}
+
+.board-tiles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid  gray;
+  color: #333;
+  font-size:4rem;
+  font-weight: bold;
+}
+.board-tiles:active{
+  background-color: rgb(125, 224, 155);
+}
+.btn{
+  
+  padding: 10px;
+  background-color: aqua;
+  cursor:pointer;
+  font-size: 13px;
+  border: 1px solid white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.btn:active {
+  background-color: rgb(90, 245, 232);
 }
